@@ -10,7 +10,7 @@ add_filter('fluent_crm/quick_links', function ($links) {
     return $links;
 });
 
-add_filter( 'plugin_action_links_' . plugin_basename( FLUENTMAIL_PLUGIN_FILE ), function ($links) {
+add_filter( 'plugin_action_links_' . FLUENTMAIL_PLUGIN_BASENAME, function ($links) {
     $links['settings'] = sprintf(
         '<a href="%s" aria-label="%s">%s</a>',
         admin_url('options-general.php?page=fluent-mail#/connections'),
